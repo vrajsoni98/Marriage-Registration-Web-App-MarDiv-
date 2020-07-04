@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientBLMaster.master.cs" Inherits="client_Webforms_Beforelogin_ClientBLMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Css/ClientCss.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:200px; height:100px;">
+                            <asp:Image ID="imgLogo" runat="server" Width="200px" Height="100px" ImageUrl="~/client/Images/Game-of-Thrones-Wallpapers-hd-Trailer-download-4k-high-definition-amazing-colourful-pictures-mac-desktop-images-widescreen-1920x1080.jpg" />
+                            </td>
+                            <td style="font-family:Algerian;font-size:60px;text-align:center; color:gray">
+                                MARDIV-CLIENT
+                            </td>
+                        </tr>
+                        <tr style="height:5px;">
+                            <td colspan="2" style="background-color:gray;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color:green;">
+                                <table class="text">
+                                    <tr>
+                                        <td style="text-align:center; width:100px">
+                                          <a href="ClientBLHome.aspx">Home</a>
+                                        </td>
+                                        <td style="text-align:center; width:100px">
+                                           <a href="ClientBLLogin.aspx">Log in </a> 
+                                        </td>
+
+                                         <td style="text-align:center; width:100px">
+                                           <a href="ClientBLSignup.aspx">Sign Up </a> 
+                                        </td>
+                                         <td style="text-align:center; width:100px">
+                                           <a href="ClientBLChangePassword.aspx">Change Password </a> 
+                                        </td>
+                                         
+
+                                        <td style="text-align:center; width:100px">
+                                          <a href="ClientBLAboutus.aspx">About Us</a>
+
+                                        </td>
+                                        <td style="text-align:center; width:100px">
+                                           <a  href="ClientBLContactus.aspx">Contact Us</a>
+
+                                        </td>
+                                        <td style="text-align:center; width:100px">
+                                           <a href="ClientBLHelp.aspx">Help</a>
+
+                                        </td>
+                                        
+                                    </tr>
+                                    </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td style="width:20%;"></td>
+                                        <td>
+                                            <div>
+                                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                                            </asp:ContentPlaceHolder>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientALMasterPage.master.cs" Inherits="client_Webforms_Afterlogin_ClientALMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Css/ClientCss.css" rel="stylesheet" />
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table style="width: 100%;">
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 200px; height: 100px;">
+                                <asp:Image ID="imgAL" runat="server" Width="200px" Height="100px" ImageUrl="~/client/Images/married just divorced.jpg" />
+                            </td>
+                            <td class="text" style="text-align: center; font-family: Algerian; font-size: 40px; color: Blue;">Welcome To Client AfterLogin
+                            </td>
+                        </tr>
+                        <tr style="height: 5px;">
+                            <td colspan="2" style="background-color: Blue"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: top; width: 150px; background-color: Blue; height: 900px;">
+                                            <table>
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; vertical-align: middle;" class="text">
+                                                        <asp:LinkButton ID="lnkHome" runat="server" ForeColor="White" Text="Home" 
+                                                            PostBackUrl="~/client/Webforms/Afterlogin/ClientALHome.aspx"></asp:LinkButton>
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; vertical-align: middle;" class="text">
+                                                        <asp:LinkButton ID="lnkMarriageForm" runat="server" ForeColor="White" Text="Marriage Form" 
+                                                            PostBackUrl="~/client/Webforms/Afterlogin/ClientALMarriageRegForm.aspx"></asp:LinkButton>
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; vertical-align: middle;" class="text">
+                                                        <asp:LinkButton ID="lnkDivorceForm" runat="server" ForeColor="White" Text="Divorce Form" PostBackUrl="~/client/Webforms/Afterlogin/ClientALDivorceRegForm.aspx"></asp:LinkButton>
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                             
+
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; vertical-align: middle;" class="text">
+                                                        <asp:LinkButton ID="lnkLogOut" runat="server" ForeColor="White" Text="Log Out" PostBackUrl="../Beforelogin/ClientBLHome.aspx"></asp:LinkButton>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr style="height: 15px;">
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; vertical-align: middle;" class="text">
+                                                        <asp:LinkButton ID="lnkHelp" runat="server" ForeColor="White" Text="Help" PostBackUrl="~/client/Webform/Afterlogin/ClientALHelp.aspx"></asp:LinkButton>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            <div>
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    </form>
+</body>
+</html>
